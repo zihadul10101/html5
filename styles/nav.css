@@ -1,21 +1,29 @@
-nav{
-    height: 50px;
-    background-color: lightgrey;
-    line-height: 30px;
-    font-size: 25px;
+ul{list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #333;
 }
-nav li{
-    list-style: none;
-    padding: 10px;
+li{
+    float: left;
 }
-nav > ul >li{
-float: left;
-}
-nav li:hover{
-    background-color: darkgray;
-}
-nav a{
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: black;
 }
-
+.dropdown{
+    display:none;
+    
+}
+.dropdown a{
+    display: block;
+}
+ul li:hover{
+    background-color: red;
+}
+ul li:hover .dropdown{
+    display: block;
+}
